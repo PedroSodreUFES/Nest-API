@@ -1,0 +1,21 @@
+@baseUrl = http://localhost:3335
+# @name create_account
+POST {{baseUrl}}/accounts
+Content-Type: application/json
+
+{
+    "name": "Pedro Sodré",
+    "email": "pedro.malini@edu.ufes.br",
+    "password": "123456"
+}
+
+###
+
+# @name authenticate
+POST {{baseUrl}}/sessions
+Content-Type: application/json
+
+{
+    "email": "pedro.malini@edu.ufes.br",
+    "password": "123456"
+}
