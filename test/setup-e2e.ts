@@ -3,7 +3,11 @@ import { randomUUID } from 'node:crypto'
 import 'dotenv/config'
 import { execSync } from 'node:child_process'
 
+import { config } from 'dotenv'
+
 // RODAR TESTES EM UM AMBIENTE ISOLADO
+config({ path: '.env', override: true })
+config({ path: '.env.test', override: true })
 
 const prisma = new PrismaClient()
 
