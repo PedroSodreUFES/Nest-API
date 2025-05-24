@@ -12,3 +12,7 @@
   1. Docker
   1. Testes: REST Client vscode extension
   1. bcrypt: senhas encryptadas
+  1. Redis: Cache
+  1. Faker
+  1. Nest Passport
+  1. Zod-Validation-Error
